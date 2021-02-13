@@ -3,8 +3,8 @@
 .hero-image {
 
     box-shadow: 12px 12px 12px rgba(0, 0, 0, calc(100% / 3));
-    transform: rotateX(-30deg) rotateZ(15deg);
-    animation: hero-image-in 1.5s;
+    transform: rotateX(-29deg) rotateZ(15deg) translateZ(1rem);
+    animation: hero-image-in 1.5s, hero-image-bounce 6s linear 1.5s infinite;
     border-radius: $radius;
 
     & img {
@@ -27,14 +27,26 @@
 @keyframes hero-image-in {
     0%  {
         opacity: 0;
-        transform: rotateX(0) rotateZ(0) translateY(4rem);
+        transform: rotateX(0) rotateZ(0) translateZ(6rem);
     }
     25% {
         opacity: 0;
-        transform: rotateX(0) rotateZ(0) translateY(4rem);
+        transform: rotateX(0) rotateZ(0) translateZ(6rem);
     }
     100% {
         opacity: 1;
-        transform: rotateX(-29deg) rotateZ(15deg) translateY(0rem);
+        transform: rotateX(-29deg) rotateZ(15deg) translateZ(1rem);
+    }
+}
+
+@keyframes hero-image-bounce {
+    0% {
+        transform: rotateX(-29deg) rotateZ(15deg) translateZ(1rem);
+    }
+    50% {
+        transform: rotateX(-29deg) rotateZ(15deg) translateZ(-1rem);
+    }
+    100% {
+        transform: rotateX(-29deg) rotateZ(15deg) translateZ(1rem);
     }
 }
