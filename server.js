@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 app.use('/assets', express.static(path.join(__dirname + '/assets')));
-app.get('/favicon.ico', express.static(path.join(__dirname, '/assets/images/favicon.ico'));
+app.get('/favicon.ico', express.static(path.join(__dirname, '/assets/images/favicon.ico')));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/views/index.html'));
