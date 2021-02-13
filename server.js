@@ -9,6 +9,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/views/index.html'));
 });
 
-const listener = app.listen(process.env.port || 8080, () => {
+const listener = app.listen(8004, () => {
     console.log(`App is listening on port ${listener.address().port}`);
 });
