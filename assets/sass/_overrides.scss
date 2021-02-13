@@ -1,14 +1,27 @@
 // Bulma Overrides
-.hero-image{
-    opacity: 1;
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 100%/3);
+
+.hero-image {
+
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, calc(100% / 3));
     transform: rotateX(-30deg) rotateZ(15deg);
-    animation: hero-image-in 1.25s;
+    animation: hero-image-in 1.5s;
+    border-radius: $radius;
+
     & img {
         border-radius: $radius;
     }
-    border-radius: $radius;
-    transition: .25s;
+
+}
+
+.navbar-menu.columns {
+    
+    margin-top: 0;
+    margin-bottom: 0;
+
+    & .navbar-start {
+        width: 100%;
+    }
+
 }
 
 @keyframes hero-image-in {
@@ -24,15 +37,4 @@
         opacity: 1;
         transform: rotateX(-29deg) rotateZ(15deg) translateY(0rem);
     }
-}
-
-.navbar-menu.columns {
-    
-    margin-top: 0;
-    margin-bottom: 0;
-
-    & .navbar-start {
-        width: 100%;
-    }
-
 }
