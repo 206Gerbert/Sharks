@@ -9,13 +9,19 @@
     <title>SisterFricker69</title>
 
     <!-- Styles -->
+    <link rel="icon" href="./assets/images/favicon.ico" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./assets/js/easing.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar is-primary is-spaced" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-primary is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
 
         <!-- Navbar Menu (Desktop) -->
         <div class="navbar-menu columns is-hidden-touch">
@@ -83,39 +89,43 @@
 
     </nav>
 
-    <!-- Hero -->
-    <section class="hero is-dark is-medium is-medium">
-        <div class="hero-body">
-            <div class="container">
+    <!-- Content -->
+    <main id="content">
 
-                <!-- Columns -->
-                <div class="columns is-vcentered">
-                    <div class="column">
+        <!-- Home -->
+        <section id="/" class="hero is-dark is-fullheight-with-navbar">
+            <div class="hero-body">
+                <div class="container">
 
-                        <!-- Title -->
-                        <h1 class="title is-1 is-family-secondary">
-                            Welcome to the greatest Discord server you will ever find.
-                        </h1>
+                    <!-- Columns -->
+                    <div class="columns is-vcentered">
+                        <div class="column">
 
-                        <!-- Subtitle -->
-                        <h4 class="title is-4 has-text-weight-normal" style="font-size: calc(0.5vw + 1rem);">
-                            Well, at least we think it is.
-                        </h4>
+                            <!-- Title -->
+                            <h1 class="title is-1 is-family-secondary">
+                                Welcome to the greatest Discord server you will ever find.
+                            </h1>
 
+                            <!-- Subtitle -->
+                            <h4 class="title is-4 has-text-weight-normal" style="font-size: calc(0.5vw + 1rem);">
+                                Well, at least we think it is.
+                            </h4>
+
+                        </div>
+                        <div class="column is-hidden-mobile">
+                            
+                            <figure class="image hero-image">
+                                <img src="/assets/images/hero.png" />
+                            </figure>
+
+                        </div>
                     </div>
-                    <div class="column is-hidden-mobile">
-                        
-                        <figure class="image hero-image">
-                            <img src="/assets/images/hero.png" />
-                        </figure>
 
-                    </div>
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
 
+    </main>
 </body>
 
 </html>

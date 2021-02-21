@@ -24,6 +24,32 @@
 
 }
 
+@media screen and (max-width: calc(#{$navbar-breakpoint} - 1px)) {
+
+    .navbar.is-spaced + #content {
+        margin-top: 3.25rem;
+
+        .hero.hero.is-fullheight-with-navbar {
+            min-height: calc(100vh - 3.25rem);
+        }
+
+    }
+
+}
+
+@media screen and (min-width: $navbar-breakpoint) {
+
+    .navbar + #content {
+        margin-top: 5.75rem;
+
+        .hero.is-fullheight-with-navbar {
+            min-height: calc(100vh - 5.75rem);
+        }
+
+    }
+    
+}
+
 @keyframes hero-image-in {
     0%  {
         opacity: 0;
