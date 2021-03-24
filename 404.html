@@ -9,8 +9,9 @@
     <title>SisterFricker69</title>
 
     <!-- Styles -->
-    <link rel="icon" href="./assets/images/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.ico" />
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -113,13 +114,272 @@
 
                         </div>
                         <div class="column is-hidden-mobile">
-                            
+
                             <figure class="image hero-image">
                                 <img src="/assets/images/hero.png" />
                             </figure>
 
                         </div>
                     </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Minecraft -->
+        <section id="/minecraft" class="hero is-black is-medium">
+            <div class="hero-body">
+
+            </div>
+        </section>
+
+        <!-- Mod Applications -->
+        <section id="/mod-applications" class="hero is-dark is-medium">
+            <div class="hero-body">
+                <div class="container is-max-desktop">
+
+                    <!-- Title -->
+                    <h2 class="title is-2 has-text-centered" style="margin-bottom: 4rem">Sister<wbr />Fricker<wbr />69 Moderator
+                        Application</h2>
+
+                    <!-- Form -->
+                    <form id="form" class="columns is-multiline" method="POST"
+                        action="https://usebasin.com/f/a7e8ce30223b">
+
+                        <!-- Discord Username -->
+                        <div class="column is-half">
+                            <h5 class="title is-5 label">Discord Username</h5>
+                            <div class="field has-addons has-addons-right">
+                                <div class="control is-expanded has-icons-left">
+                                    <input class="input is-black is-medium is-fullwidth" id="username" name="Username"
+                                        placeholder="SisterFricker" required />
+                                    <span class="icon is-left">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </div>
+                                <div class="control has-icons-left">
+                                    <input class="input is-black is-medium" id="discriminator" name="Discriminator"
+                                        placeholder="6969" style="width: 8rem" maxlength="4" minlength="4" required />
+                                    <span class="icon is-left">
+                                        <i class="fas fa-hashtag"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Age -->
+                        <div class="column is-half">
+                            <h5 class="title is-5 label">Age</h5>
+                            <div class="field">
+                                <div class="control has-icons-left">
+                                    <input class="input is-black is-medium is-fullwidth" id="age" name="Age"
+                                        placeholder="18" required />
+                                    <span class="icon is-left">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Spacing -->
+                        <div class="column is-full is-hidden-mobile"></div>
+
+                        <!-- Time Zone -->
+                        <div class="column is-full">
+                            <h5 class="title is-5 label">Time Zone</h5>
+                            <div class="field">
+                                <div class="control is-expanded has-icons-left">
+                                    <div class="select is-black is-medium is-fullwidth">
+                                        <select id="time-zone" name="Time Zone" required>
+                                            <option data-time="-0:00">[GMT] Greenwich Mean Time (GMT)</option>
+                                            <option data-time="-0:00">[UTC] Universal Coordinated Time (GMT)</option>
+                                            <option data-time="+1:00">[ECT] European Central Time (GMT+1:00)</option>
+                                            <option data-time="+2:00">[EET] Eastern European Time (GMT+2:00)</option>
+                                            <option data-time="+2:00">[ART] (Arabic) Egypt Standard Time (GMT+2:00)
+                                            </option>
+                                            <option data-time="+3:00">[EAT] Eastern African Time (GMT+3:00)</option>
+                                            <option data-time="+3:30">[MET] Middle East Time (GMT+3:30)</option>
+                                            <option data-time="+4:00">[NET] Near East Time (GMT+4:00)</option>
+                                            <option data-time="+5:00">[PLT] Pakistan Lahore Time (GMT+5:00)</option>
+                                            <option data-time="+5:30">[IST] India Standard Time (GMT+5:30)</option>
+                                            <option data-time="+6:00">[BST] Bangladesh Standard Time (GMT+6:00)</option>
+                                            <option data-time="+7:00">[VST] Vietnam Standard Time (GMT+7:00)</option>
+                                            <option data-time="+8:00">[CTT] China Taiwan Time (GMT+8:00)</option>
+                                            <option data-time="+9:00">[JST] Japan Standard Time (GMT+9:00)</option>
+                                            <option data-time="+9:30">[ACT] Australia Central Time (GMT+9:30)</option>
+                                            <option data-time="+10:00">[AET] Australia Eastern Time (GMT+10:00)</option>
+                                            <option data-time="+11:00">[SST] Solomon Standard Time (GMT+11:00)</option>
+                                            <option data-time="+12:00">[NST] New Zealand Standard Time (GMT+12:00)
+                                            </option>
+                                            <option data-time="-11:00">[MIT] Midway Islands Time (GMT-11:00)</option>
+                                            <option data-time="-10:00">[HST] Hawaii Standard Time (GMT-10:00)</option>
+                                            <option data-time="-9:00">[AST] Alaska Standard Time (GMT-9:00)</option>
+                                            <option data-time="-8:00">[PST] Pacific Standard Time (GMT-8:00)</option>
+                                            <option data-time="-7:00">[PNT] Phoenix Standard Time (GMT-7:00)</option>
+                                            <option data-time="-7:00">[MST] Mountain Standard Time (GMT-7:00)</option>
+                                            <option data-time="-6:00">[CST] Central Standard Time (GMT-6:00)</option>
+                                            <option data-time="-5:00">[EST] Eastern Standard Time (GMT-5:00)</option>
+                                            <option data-time="-5:00">[IET] Indiana Eastern Standard Time (GMT-5:00)
+                                            </option>
+                                            <option data-time="-4:00">[PRT] Puerto Rico and US Virgin Islands
+                                                Time(GMT-4:00)
+                                            </option>
+                                            <option data-time="-3:30">[CNT] Canada Newfoundland Time (GMT-3:30)</option>
+                                            <option data-time="-3:00">[AGT] Argentina Standard Time (GMT-3:00)</option>
+                                            <option data-time="-3:00">[BET] Brazil Eastern Time (GMT-3:00)</option>
+                                            <option data-time="-1:00">[CAT] Central African Time (GMT-1:00)</option>
+                                        </select>
+                                    </div>
+                                    <span class="icon is-left">
+                                        <i class="fas fa-clock"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Spacing -->
+                        <div class="column is-full is-hidden-mobile"></div>
+
+                        <!-- Question 1 -->
+                        <div class="column is-full">
+                            <h5 class="title is-5 label">Why do you think you would be a good moderator?</h5>
+                            <div class="field">
+                                <div class="control is-expanded">
+                                    <textarea class="textarea is-black is-medium is-fullwidth" id="question1"
+                                        name="Why do you think you would be a good moderator?"
+                                        placeholder="Your response..." required></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Spacing -->
+                        <div class="column is-full is-hidden-mobile"></div>
+
+                        <!-- Question 2 -->
+                        <div class="column is-full">
+                            <h5 class="title is-5 label">What skills will you bring to our team?</h5>
+                            <div class="field">
+                                <div class="control is-expanded">
+                                    <textarea class="textarea is-black is-medium is-fullwidth" id="question2"
+                                        name="What skills will you bring to our team?" placeholder="Your response..."
+                                        required></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Spacing -->
+                        <div class="column is-full is-hidden-mobile"></div>
+
+                        <!-- Question 3 -->
+                        <div class="column is-full">
+                            <h5 class="title is-5 label">Have you ever been kicked, banned, or warned in the past? If
+                                so, what for?</h5>
+                            <div class="field">
+                                <div class="control is-expanded">
+                                    <textarea class="textarea is-black is-medium is-fullwidth" id="question3"
+                                        name="Have you ever been kicked, banned, or warned in the past? If so, what for?"
+                                        placeholder="Your response..." required></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Spacing -->
+                        <div class="column is-full is-hidden-mobile"></div>
+
+                        <!-- Question 4 -->
+                        <div class="column is-full">
+                            <h5 class="title is-5 label">Do you have any past experience as a staff member of another
+                                Discord server?</h5>
+                            <div class="field">
+                                <div class="control is-expanded">
+                                    <textarea class="textarea is-black is-medium is-fullwidth" id="question4"
+                                        name="Do you have any past experience as a staff member of another Discord server?"
+                                        placeholder="Your response..." required></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Spacing -->
+                        <div class="column is-full is-hidden-mobile"></div>
+
+                        <!-- Question 5 -->
+                        <div class="column is-full">
+                            <h5 class="title is-5 label">A user is spamming in #general, what do you do?</h5>
+                            <div class="field">
+                                <div class="control is-expanded">
+                                    <textarea class="textarea is-black is-medium is-fullwidth" id="question5"
+                                        name="A user is spamming in #general, what do you do?"
+                                        placeholder="Your response..." required></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Spacing -->
+                        <div class="column is-full is-hidden-mobile"></div>
+
+                        <!-- Question 6 -->
+                        <div class="column is-full">
+                            <h5 class="title is-5 label">A user has just posted NSFW in #general, what do you do?</h5>
+                            <div class="field">
+                                <div class="control is-expanded">
+                                    <textarea class="textarea is-black is-medium is-fullwidth" id="question6"
+                                        name="A user has just posted NSFW in #general, what do you do?"
+                                        placeholder="Your response..." required></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Spacing -->
+                        <div class="column is-full is-hidden-mobile"></div>
+
+                        <!-- Question 7s -->
+                        <div class="column is-full">
+                            <h5 class="title is-5 label">A user has just said a racial slur in #general, what do you do?
+                            </h5>
+                            <div class="field">
+                                <div class="control is-expanded">
+                                    <textarea class="textarea is-black is-medium is-fullwidth" id="question7"
+                                        name="A user has just said a racial slur in #general, what do you do?"
+                                        placeholder="Your response..." required></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Spacing -->
+                        <div class="column is-full is-hidden-mobile"></div>
+
+                        <!-- Question 8 -->
+                        <div class="column is-full">
+                            <h5 class="title is-5 label">Any further information we should know?</h5>
+                            <div class="field">
+                                <div class="control is-expanded">
+                                    <textarea class="textarea is-black is-medium is-fullwidth" id="question8"
+                                        name="Any further information we should know?"
+                                        placeholder="Your response..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="column is-full">
+                            <div class="buttons is-right">
+
+                                <!-- Reset -->
+                                <button class="button is-black is-medium" type="reset">
+                                    <strong>Cancel&nbsp;&nbsp;</strong>
+                                    <i class="fas fa-ban"></i>
+                                </button>
+
+                                <!-- Submit -->
+                                <button class="button is-primary is-medium" type="submit">
+                                    <strong>Submit&nbsp;&nbsp;</strong>
+                                    <i class="fas fa-rocket"></i>
+                                </button>
+
+                            </div>
+                        </div>
+
+                    </form>
 
                 </div>
             </div>

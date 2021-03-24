@@ -15,12 +15,11 @@ $(document).ready(() => {
         $(this).blur();
         
         const destination = new URL($(this).attr('href'), window.location.origin);
-        if (destination.pathname == window.location.pathname) return;
 
         $(document.scrollingElement).animate({ 
             scrollTop: $(`[id="${destination.pathname}"]`).offset().top 
         }, 1000, 'easeInOutCubic', () => {
-            window.location.href = destination.href;
+            if (destination.pathname !== window.location.pathname) window.location.href = destination.href;
         });
 
     });
